@@ -1,0 +1,16 @@
+# كود للبحث عن تتابعات معينة (Motifs) داخل الجين
+def find_motif(dna, motif):
+    locations = []
+    start = 0
+    while True:
+        start = dna.find(motif, start)
+        if start == -1: break
+        locations.append(start)
+        start += 1
+    return locations
+
+gene_data = "GATCGATCGATCGATCGATCGATC"
+target_motif = "GATC"
+found = find_motif(gene_data, target_motif)
+
+print(f"Motif '{target_motif}' found at positions: {found}")
