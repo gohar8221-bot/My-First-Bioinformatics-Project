@@ -1,0 +1,21 @@
+import pandas as pd
+
+# كود لتحليل بيانات جينات الخلايا الجذعية التي قمت برفعها
+def analyze_my_data(file_name):
+    # قراءة الملف (بصيغة TSV)
+    df = pd.read_csv(file_name, sep='\t')
+    
+    # استخراج معلومات هامة: الرمز، طول الحمض النووي، وطول البروتين
+    important_data = df[['Symbol', 'Transcript Length', 'Protein Length']]
+    
+    print("--- تقرير تحليل بيانات الجينات ---")
+    print(f"عدد النسخ المكتشفة: {len(df)}")
+    print("\nأول 5 نتائج في الجدول:")
+    print(important_data.head())
+    
+    # حساب أطول بروتين في القائمة
+    max_protein = df['Protein Length'].max()
+    print(f"\nأطول بروتين تم رصده طوله: {max_protein} حمض أميني")
+
+# تشغيل التحليل على ملفك
+analyze_my_data('ncbi_dataset.tsv')
