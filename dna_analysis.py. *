@@ -1,0 +1,21 @@
+# Advanced Bioinformatics & Genomic Analysis Portfolio
+
+## 🧬 Overview
+This repository is a comprehensive professional showcase of Bioinformatics tools. It integrates biological data from **NCBI** with **Python** programming to analyze stem cell markers and genetic sequences.
+
+## 🛠️ Tools & Scripts
+* **dna_analysis.py**: Calculates GC content to determine DNA thermal stability.
+* **data_parser.py**: Uses **Pandas** to process large genomic datasets (TSV).
+* **gene_to_protein_tool.py**: Simulates biological translation and calculates protein weight.
+
+## 🧪 Scientific Focus
+* **Stem Cell Research**: Focused on the POU5F1 (OCT4) gene analysis.
+* **Clinical Biochemistry**: Applying computational methods for clinical applications.
+
+## 🎓 Academic Background
+* **Degree**: Bachelor’s in Biotechnology, Mansoura University (Class of 2021).
+* **Future Plans**: Foundation Year in Science at the University of Pisa, Italy.
+
+## 📬 Contact
+**Mohammed Taha**
+Biotechnologist | Bioinformatics Enthusiast
